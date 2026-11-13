@@ -1,0 +1,34 @@
+C:\Users\tonyr\Downloads\AndroidSecurityProject>frida -U -f com.example.comnononsenseappssecuritytest -l hooks.js
+     ____
+    / _  |   Frida 17.9.1 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to Android Emulator 5554 (id=emulator-5554)
+Spawning `com.example.comnononsenseappssecuritytest`...
+[*] Frida script loaded and surveillance active...
+Spawned `com.example.comnononsenseappssecuritytest`. Resuming main thread!
+[Android Emulator 5554::com.example.comnononsenseappssecuritytest ]-> [+] Successfully hooked VulnerableService!
+
+[!] SECURITY ALERT: Exported Component Entry Detected!
+[!] External source triggered .VulnerableService via Intent.
+
+[!] ALERT: Permission Goldmining Detected!
+[!] ALERT: App is requesting Device ID (IMEI)
+[!] This permission was NOT found in the Static Baseline JSON.
+
+[!] ALERT: Permission Goldmining Detected!
+[!] ALERT: App is requesting Device ID (IMEI)
+[!] This permission was NOT found in the Static Baseline JSON.
+
+[!] ALERT: Permission Goldmining Detected!
+[!] ALERT: App is requesting Device ID (IMEI)
+[!] This permission was NOT found in the Static Baseline JSON.
+
+[!] SECURITY ALERT: Exported Component Entry Detected!
+[!] External source triggered .VulnerableService via Intent.
